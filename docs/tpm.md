@@ -1,4 +1,4 @@
-# Linux* TPM* Implementation
+# Linux&reg; TPM&reg; Implementation
 
 `Ubuntu* OS version 16.04/18.04` on x86 was used as a development and execution OS. Follow these steps to compile and execute  Secure Device Onboard (SDO).
 
@@ -8,7 +8,7 @@ The  SDO build and execution depend on OpenSSL* toolkit version 1.1.1f. Users mu
 
 OpenSSL* toolkit version 1.1.1f. Follow the steps given in Section 10 to update the openssl version to 1.1.1f.
 
-## 2. TPM* Library Installation (for Ubuntu OS version 16.04/18.04):
+## 2. TPM&reg; Library Installation (for Ubuntu OS version 16.04/18.04):
 
  SDO TPM based client-sdk uses TPM-TSS 2.3.1, TPM2-ABRMD 2.2.0 and TPM2-TOOLS 4.0.1 libraries for key and cryptography related operations. The TPM-TSS library is required for compiling the code while all 3 libraries are required for running the code. Create an empty directory, download and execute SDO TPM [TPM-Library-Installation-Script](../utils/install_tpm_libs.sh) which can be used for both installation and uninstallation of TPM libraries. Alternatively, perform steps listed in section 2.1 to setup TPM library without using the TPM [TPM-Library-Installation-Script](../utils/install_tpm_libs.sh).
 
@@ -227,7 +227,7 @@ Find a persistent storage index that is unused in the TPM and note it down. It u
   $ tpm2_evictcontrol -C o -c 0x81000001 -V
   ```
 
-- OpenSSL* Toolkit Library Linking Related Error While Building SDO Client SDK.<br />
+- OpenSSL&reg; Toolkit Library Linking Related Error While Building SDO Client SDK.<br />
   There is a dependency on the OpenSSL* toolkit version 1.1.1f for building and running the SDO Client SDK.
   Check the version of the OpenSSL toolkit installed in your machine with the command
 
@@ -236,7 +236,7 @@ Find a persistent storage index that is unused in the TPM and note it down. It u
   ```
   If the OpenSSL toolkit version in your machine is earlier than version 1.1.1f, follow the steps given in Section10 to update the openssl version to 1.1.1f.
 
-## Steps to upgrade the OpenSSL* toolkit to version 1.1.1f
+## Steps to upgrade the OpenSSL&reg; toolkit to version 1.1.1f
 
 ```shell
 # 1. If libssl-dev is installed, remove it:
@@ -259,7 +259,7 @@ Find a persistent storage index that is unused in the TPM and note it down. It u
 # 5. Issue the command 
 
   $ make 
-  (You may need to run “sudo apt install make gcc” before running this command successfully).
+  (You may need to run Â“sudo apt install make gccÂ” before running this command successfully).
 
 # 6. Check for possible errors.
 
